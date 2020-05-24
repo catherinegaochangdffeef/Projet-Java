@@ -1,4 +1,4 @@
-package emprunt;
+package model;
 
 public class Emprunt {
 private int DateDebut;
