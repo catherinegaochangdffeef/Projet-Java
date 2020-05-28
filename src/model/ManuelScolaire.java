@@ -2,7 +2,7 @@ package model;
 
 public class ManuelScolaire extends Livre {
 
-	protected ManuelScolaire() {
+	public ManuelScolaire() {
 		super();
 		// TODO Auto-generated constructor stub
 	}

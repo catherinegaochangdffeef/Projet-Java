@@ -3,7 +3,7 @@ package model;
 public class CD extends SupportNumerique{
 protected int AnneeDeSortie;
 
-protected CD() {
+public CD() {
 	super();
 	// TODO Auto-generated constructor stub
 }

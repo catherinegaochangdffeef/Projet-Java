@@ -2,7 +2,7 @@ package model;
 
 public class BD extends Livre {
 
-	protected BD() {
+	public BD() {
 		super();
 		// TODO Auto-generated constructor stub
 	}

@@ -2,7 +2,7 @@ package model;
 
 public abstract class Document extends Product {
 
-	protected Document() {
+	public Document() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
