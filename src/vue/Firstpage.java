@@ -17,7 +17,7 @@ import javax.swing.JTextField;
 
 public class Firstpage {
 	public void init() {
-		JFrame f=new JFrame("Bienvenu dans la gestion d'une vediotheque !");
+		JFrame f=new JFrame("Bienvenue dans la gestion d'une vidéothèque!");
 //changer icon de la fênêtre		
 		Toolkit t=Toolkit.getDefaultToolkit();
 		Image img=t.getImage("src\\vue\\icon.jpg");
@@ -49,7 +49,7 @@ public class Firstpage {
 		panel1.setBounds(60,60,500,300);// set la taille de panel
 		f.add(panel1);
 //etiquette de la type de utilisateur
-		JLabel user= new JLabel("Type de utilisateur");
+		JLabel user= new JLabel("Type d'utilisateur");
 		Font font1=new Font("Arial", Font.BOLD,25);
 		user.setFont(font1);
 		panel2.add(user);
@@ -77,7 +77,7 @@ public class Firstpage {
 		panel3.setBounds(90,230,400,300);
 		f.add(panel3);
 // etiquette de la mode de passe
-		JLabel labpassword= new JLabel("Mode de passe:");
+		JLabel labpassword= new JLabel("Mot de passe:");
 		Font font4= new Font("Arial",Font.BOLD,25);
 		labpassword.setFont(font4);
 		panel4.add(labpassword);
@@ -91,7 +91,7 @@ public class Firstpage {
 		f.add(panel4);
 // boutons de connecter et creer un compte
 		JButton button1= new JButton("Creer un compte");
-		JButton button2= new JButton("Connecter");
+		JButton button2= new JButton("Se Connecter");
 		button1.setFont(font2);
 		button2.setFont(font2);
 		Dimension dimension2=new Dimension(1000,40);
