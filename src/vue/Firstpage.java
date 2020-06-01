@@ -43,7 +43,7 @@ public class Firstpage {
 		
 //ajouter la text en haut
 		JLabel lable= new JLabel("Gestion de la vidéothèque");
-		Font font = new Font("Arial",Font.BOLD,40);
+		Font font = new Font("Arial",Font.BOLD,35);
 		lable.setFont(font);
 		panel1.add(lable);
 		panel1.setBounds(60,60,500,300);// set la taille de panel
@@ -67,18 +67,18 @@ public class Firstpage {
 
 //etiquette de compte
 		JLabel labid=new JLabel("Compte:");
-		Font font3=new Font("Arial", Font.BOLD,25);
+		Font font3=new Font("Arial", Font.BOLD,20);
 		labid.setFont(font3);
 		panel3.add(labid);
 // la textfield de la compte
 		JTextField id= new JTextField();
 		id.setPreferredSize(dimension);
 		panel3.add(id);
-		panel3.setBounds(90,230,400,300);
+		panel3.setBounds(110,230,400,300);
 		f.add(panel3);
 // etiquette de la mode de passe
 		JLabel labpassword= new JLabel("Mot de passe:");
-		Font font4= new Font("Arial",Font.BOLD,25);
+		Font font4= new Font("Arial",Font.BOLD,20);
 		labpassword.setFont(font4);
 		panel4.add(labpassword);
 // la textfield de la mode de passe
