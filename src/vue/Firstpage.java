@@ -20,7 +20,7 @@ public class Firstpage {
 		JFrame f=new JFrame("Bienvenue dans la gestion d'une vidéothèque!");
 //changer icon de la fênêtre		
 		Toolkit t=Toolkit.getDefaultToolkit();
-		Image img=t.getImage("src\\vue\\icon.jpg");
+		Image img=t.getImage("src\\vue\\icon3.jpg");
 		f.setIconImage(img);
 // set la taille d'une fenetre
 		f.setSize(600,600);
