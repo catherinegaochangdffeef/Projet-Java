@@ -30,7 +30,7 @@ public class Firstpage {
 		f.setLayout(null);
 		
 // set la background de la fenetre
-		Icon i=new ImageIcon("sec\\vue\\background.jpg");
+		Icon i=new ImageIcon("src\\vue\\background.jpg");
 		JLabel jLable=new JLabel(i);
 		jLable.setBounds(0,0,600,600);
 		
