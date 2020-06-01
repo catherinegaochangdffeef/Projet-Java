@@ -1,10 +1,11 @@
 package test;
 
+import vue.Firstpage;
+
 public class Test {
-
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
+	Firstpage f= new Firstpage();
+	f.init();
+			}
 
 }

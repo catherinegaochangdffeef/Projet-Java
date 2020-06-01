@@ -2,6 +2,8 @@ package model;
 
 public abstract class Product {
 
+	
+//Chaque produit est déni par un identiant, un titre et un tarif journalier.
  protected String title;
  protected float tarifjournalier;
  protected int identifiant;
