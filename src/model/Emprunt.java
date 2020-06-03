@@ -1,24 +1,26 @@
 package model;
+import java.util.Date;
 
 public class Emprunt {
-private int DateDebut;
-private int DateFin;
-public int getDateDebut() {
+private Date DateDebut;
+private Date DateFin;
+
+
+public Date getDateDebut() {
 	return DateDebut;
 }
-public void setDateDebut(int dateDebut) {
+public void setDateDebut(Date dateDebut) {
 	DateDebut = dateDebut;
 }
-public int getDateFin() {
+public Date getDateFin() {
 	return DateFin;
 }
-public void setDateFin(int dateFin) {
+public void setDateFin(Date dateFin) {
 	DateFin = dateFin;
 }
-protected Emprunt(int dateDebut, int dateFin) {
-	super();
-	DateDebut = dateDebut;
-	DateFin = dateFin;
+public Emprunt(Date dateDebut, Date dateFin) {
+	this.DateDebut = dateDebut;
+	this.DateFin = dateFin;
 }
 
 }
