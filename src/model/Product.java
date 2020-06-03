@@ -1,9 +1,9 @@
 package model;
 
-public abstract class Product {
+public abstract class Product{
 
 	
-//Chaque produit est déni par un identiant, un titre et un tarif journalier.
+//Chaque produit est défini par un identifiant, un titre et un tarif journalier.
  protected String title;
  protected float tarifjournalier;
  protected int identifiant;
@@ -29,5 +29,9 @@ public void setIdentifiant(int identifiant) {
 	this.identifiant = identifiant;
 }
  
-
+public Product(String title, int identifiant,float tarifjournalier) {
+	this.title=title;
+	this.tarifjournalier=tarifjournalier;
+	this.identifiant=identifiant;
+}
 }

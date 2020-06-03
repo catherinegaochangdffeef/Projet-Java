@@ -3,8 +3,9 @@ package model;
 public class CD extends SupportNumerique{
 protected int AnneeDeSortie;
 
-public CD() {
-	super();
+public CD(String title, int identifiant, float tarifjournalier, int AnneeDeSortie) {
+	super(title, identifiant, tarifjournalier);
+	this.AnneeDeSortie=AnneeDeSortie;
 	// TODO Auto-generated constructor stub
 }
 

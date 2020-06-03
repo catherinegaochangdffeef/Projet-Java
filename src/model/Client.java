@@ -1,7 +1,7 @@
 package model;
 
 public abstract class Client {
-	//Les clients de la vidiothèque sont dénis par un identiant, un
+	//Les clients de la vidiothèque sont dénis par un identifiant, un
 	//nom et un prénom.
 protected String nom;
 protected String prenom;

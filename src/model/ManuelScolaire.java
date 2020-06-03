@@ -2,9 +2,8 @@ package model;
 
 public class ManuelScolaire extends Livre {
 
-	public ManuelScolaire() {
-		super();
-		//test github
+	public ManuelScolaire(String title, int identifiant, float tarifjournalier, String auteur) {
+		super(title, identifiant, tarifjournalier, auteur);
 		// TODO Auto-generated constructor stub
 	}
 

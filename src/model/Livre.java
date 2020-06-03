@@ -1,7 +1,7 @@
 package model;
 
 public abstract class Livre extends Document{
-//Dans la catégorie des livres, il y a trois types de produits : les romans, les manuels scolaires
+//Dans la catï¿½gorie des livres, il y a trois types de produits : les romans, les manuels scolaires
 //	et les BD.	
 	protected String auteur;
 
@@ -13,5 +13,13 @@ public abstract class Livre extends Document{
 		this.auteur = auteur;
 	}
 
-	
+	public Livre(String title, int identifiant, float tarifjournalier, String auteur) {
+		super(title, identifiant, tarifjournalier);
+		this.auteur=auteur;
+		// TODO Auto-generated constructor stub
+	}
+
+	public String toString(){
+		return super.toString()+"Livre {" + "Auteur = " + auteur;
+	}
 }

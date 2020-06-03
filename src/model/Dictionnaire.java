@@ -1,19 +1,21 @@
 package model;
 
 public class Dictionnaire extends Document{
-protected String langage;
+	
+protected String langue;
 
-
-
-
-
-
-public String getLangage() {
-	return langage;
+public Dictionnaire(String title, int identifiant, float tarifjournalier, String langue) {
+	super(title, identifiant, tarifjournalier);
+	this.langue=langue;
+	// TODO Auto-generated constructor stub
 }
 
-public void setLangage(String langage) {
-	this.langage = langage;
+public String getLangue() {
+	return langue;
+}
+
+public void setLangue(String langue) {
+	this.langue = langue;
 }
 
 }
