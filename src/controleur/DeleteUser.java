@@ -27,12 +27,12 @@ public class DeleteUser {
 		f.setLayout(null);
 		f.setTitle("Delete un client");
 		
-		//改变窗口图标
+		//icon
 		Toolkit tool = Toolkit.getDefaultToolkit();
 		Image img = tool.getImage("src\\vue\\sign.jpg");
 		f.setIconImage(img);
 		
-		/*设置窗口背景图案*/
+		/*background set */
 		Icon i = new ImageIcon("src\\vue\\admin_background.jpg");
 		JLabel label = new JLabel(i);
 		label.setBounds(0, 0, 500, 500);
@@ -46,13 +46,13 @@ public class DeleteUser {
 		Font font = new Font("Arial",Font.BOLD,30);
 		Font font1 = new Font("Arial",Font.PLAIN,20);
 		Dimension dimension = new Dimension(300,40);
-		/*用户名标签*/
+		/*etiquette*/
 		JLabel labname= new JLabel(" identifiant");
 		labname.setFont(font);
 		panel1.add(labname);
 		panel1.setBounds(50, 100, 200, 60);
 		
-		/*用户名输入文本框*/
+		/*textfield*/
 		JTextField textname = new JTextField(12);
 		panel2.setLayout(null);
 		textname.setSize(dimension);
@@ -63,7 +63,7 @@ public class DeleteUser {
 		
 		
 		
-		/*添加按钮*/
+		/*ajouter un boutton*/
 		JButton button = new JButton("Supprimer");
 		button.setPreferredSize(dimension);
 		button.setBackground(Color.PINK);

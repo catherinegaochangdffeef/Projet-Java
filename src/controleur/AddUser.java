@@ -29,12 +29,12 @@ public class AddUser {
 		f.setLayout(null);
 		f.setTitle("ajouter un client");
 		
-		//改变窗口图标
+		//icon
 		Toolkit tool = Toolkit.getDefaultToolkit();
 		Image img = tool.getImage("src\\vue\\sign.jpg");
 		f.setIconImage(img);
 		
-		/*设置窗口背景图案*/
+		/*background set */
 		Icon i = new ImageIcon("src\\vue\\admin_background.jpg");
 		JLabel label = new JLabel(i);
 		label.setBounds(0, 0, 500, 500);
@@ -54,13 +54,13 @@ public class AddUser {
 		Dimension dimension = new Dimension(200,40);
 
 		
-		/*用户名标签*/
+		/*etiquette*/
 		JLabel labname= new JLabel(" Identifiant");
 		labname.setFont(font);
 		panel1.add(labname);
 		panel1.setBounds(50, 20, 200, 60);
 		
-		/*用户名输入文本框*/
+		/*textfield*/
 		JTextField textname = new JTextField(12);
 		panel2.setLayout(null);
 		textname.setSize(dimension);
@@ -68,13 +68,13 @@ public class AddUser {
 		panel2.add(textname);
 		panel2.setBounds(100, 50, 500, 50);
 		
-		/*密码标签*/
+		/* etiquette*/
 		JLabel labname1 = new JLabel("nom");
 		labname1.setFont(font);
 		panel3.add(labname1);
 		panel3.setBounds(50, 90, 200, 60);
 		
-		/*密码输入文本框*/
+		/*textfield*/
 		JTextField textname1 = new JTextField(12);
 		panel4.setLayout(null);
 		textname1.setSize(dimension);
@@ -87,7 +87,7 @@ public class AddUser {
 		panel5.add(labname2);
 		panel5.setBounds(50, 160, 200, 60);
 		
-		/*密码输入文本框*/
+		/*textfield*/
 		JTextField textname2 = new JTextField(12);
 		panel6.setLayout(null);
 		textname2.setSize(dimension);
@@ -96,7 +96,7 @@ public class AddUser {
 		panel6.setBounds(100, 190, 500, 50);
 		
 		
-		/*添加按钮*/
+		/*ajouter un button*/
 		JButton button = new JButton("Ajouter");
 		button.setPreferredSize(dimension);
 		button.setBackground(Color.PINK);
