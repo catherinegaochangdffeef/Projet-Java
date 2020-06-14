@@ -32,6 +32,9 @@ import javax.swing.table.DefaultTableModel;
 import javax.swing.table.JTableHeader;
 import javax.swing.table.TableCellRenderer;
 
+import controleur.AddUser;
+import controleur.AddProduit;
+
 
 
 public class Produit extends JFrame{
@@ -155,6 +158,16 @@ public class Produit extends JFrame{
 		button2.setBackground(Color.pink);
 		button2.setBounds(520,630, 170, 40);
 		
+		
+		/*ajouter un nouveau produit*/
+		button1.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				AddProduit ad  = new AddProduit();
+				
+			}
+		});
 	
 		laypane.add(label, new Integer(0),0);
 		laypane.add(lab3,new Integer(150),1);

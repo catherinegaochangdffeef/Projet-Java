@@ -167,6 +167,6 @@ public final class Videotheque {
 		Livre artemisFowl = new Roman("Artemis Fowl", 2, 10.0F, "Eoin Colfer");
 		Videotheque.ajouterProduitAuStock(lePetitPrince);
 		Videotheque.ajouterProduitAuStock(artemisFowl);
-		Videotheque.listeProduits();
+		
 	}
 }
