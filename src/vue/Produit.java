@@ -81,7 +81,7 @@ public class Produit extends JFrame{
 		
 		/*etiquette*/
 		Font font = new Font("Arial",Font.BOLD,20);
-		JLabel lab3 = new JLabel("Choisir la façon de recherche");
+		JLabel lab3 = new JLabel("Choisir le type de recherche");
 		lab3.setFont(font);
 		lab3.setForeground(Color.WHITE);
 		lab3.setBounds(140, 60, 600, 30);
@@ -91,8 +91,8 @@ public class Produit extends JFrame{
 		Dimension dimension = new Dimension(220,30);
 		JComboBox<String> j = new JComboBox<>();
 		j.setSize(dimension);
-		j.addItem("Par indentifiant");
-		j.addItem("Par titre");
+		j.addItem("recherche par indentifiant");
+		j.addItem("recherche par titre");
 		j.setBounds(140, 100,220, 30);
 		j.setBackground(Color.pink );
 		j.setFont(font1);

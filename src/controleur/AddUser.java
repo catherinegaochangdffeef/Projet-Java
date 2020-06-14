@@ -82,7 +82,7 @@ public class AddUser {
 		panel4.add(textname1);
 		panel4.setBounds(100, 120, 500, 50);
 		
-		JLabel labname2 = new JLabel("Pr¨¦nom");
+		JLabel labname2 = new JLabel("Prénom");
 		labname2.setFont(font);
 		panel5.add(labname2);
 		panel5.setBounds(50, 160, 200, 60);
@@ -112,7 +112,7 @@ public class AddUser {
 				String nom = textname1.getText().trim();
 		
 			
-					JOptionPane.showMessageDialog(null, "R¨¦ussi ¨¤ ajouter", "Ajouter", JOptionPane.PLAIN_MESSAGE);
+					JOptionPane.showMessageDialog(null, "Réussi à ajouter", "Ajouter", JOptionPane.PLAIN_MESSAGE);
 							}
 		});
 		

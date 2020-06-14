@@ -78,7 +78,7 @@ public class DeleteUser {
 				
 				
 				
-					JOptionPane.showMessageDialog(null, "R¨¦ussi ¨¤ supprimer", "Supprim¨¦", JOptionPane.PLAIN_MESSAGE);
+					JOptionPane.showMessageDialog(null, "Réussi à supprimer", "Supprimé", JOptionPane.PLAIN_MESSAGE);
 				
 			}
 		});
