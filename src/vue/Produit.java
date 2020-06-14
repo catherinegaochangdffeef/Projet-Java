@@ -63,25 +63,23 @@ public class Produit extends JFrame{
 	
 	public Produit()  {
 		
-		/*
-		 * 查询图书
-		 */
+		
 		Font font1 = new Font("Arial",Font.BOLD,13);
 		Font font2 = new Font("Arial",Font.BOLD,20);
 		
 		
-		//改变窗口图标
+		//icon
 		Toolkit tool = Toolkit.getDefaultToolkit();
 		Image img = tool.getImage("src\\vue\\sign.jpg");
 		this.setIconImage(img);
 		
-		/*设置窗口背景图案*/
+		/*background image */
 		Icon i=new ImageIcon("src\\vue\\background5.jpg");
 		JLabel label = new JLabel(i);
 		label.setBounds(0, 0, 1000, 800);
 		
 		
-		/*面板3中的标签*/
+		/*etiquette*/
 		Font font = new Font("Arial",Font.BOLD,20);
 		JLabel lab3 = new JLabel("Choisir la façon de recherche");
 		lab3.setFont(font);
@@ -89,7 +87,7 @@ public class Produit extends JFrame{
 		lab3.setBounds(140, 60, 600, 30);
 		
 		
-		/*面板3中的查询下拉框*/
+		/*combobox */
 		Dimension dimension = new Dimension(220,30);
 		JComboBox<String> j = new JComboBox<>();
 		j.setSize(dimension);
@@ -100,7 +98,7 @@ public class Produit extends JFrame{
 		j.setFont(font1);
 		
 		
-		/*面板3中的搜索框*/
+		/*recherche textfield*/
 		JTextField text3 = new JTextField();
 		Dimension dimension1 = new Dimension(270,30);
 		text3.setFont(font1);
@@ -108,13 +106,13 @@ public class Produit extends JFrame{
 		text3.setBackground(Color.pink);
 		text3.setBounds(390,100, 270, 30);
 		
-		/*按钮*/
+		/*button*/
 		JButton button = new JButton("Rechercher");
 		button.setBackground(Color.pink);
 		button.setBounds(670, 100, 120, 30);
 		button.setFont(font2);
 		
-		/*新建表格*/
+		/*ajouter nouveau tableau*/
 		model = new DefaultTableModel();
 		model.addColumn("id", new Vector<Integer>());
 		model.addColumn("titre",new Vector<String>());
@@ -130,41 +128,24 @@ public class Produit extends JFrame{
 		jp.setBounds(30, 150, 930, 450);
 
 		
-		JTableHeader head = table.getTableHeader();//创建表格表头对象
-		head.setPreferredSize(new Dimension(head.getWidth(),35));//设置表头框框大小
-		head.setFont(new Font("Arial",Font.BOLD,15));//设置表格字体
-		table.setRowHeight(30);//设置表格行宽
-		table.setFont(new Font("Arial",Font.ROMAN_BASELINE,13));//设置表格行中字体大小
+		JTableHeader head = table.getTableHeader();
+		head.setPreferredSize(new Dimension(head.getWidth(),35));
+		head.setFont(new Font("Arial",Font.BOLD,15));
+		table.setRowHeight(30);
+		table.setFont(new Font("Arial",Font.ROMAN_BASELINE,13));
 		
 
 		
 		
 		
 		
-		/*使单元格中的内容居中*/
+		/*set des contenu au milieu*/
 		DefaultTableCellRenderer renderer=new DefaultTableCellRenderer();
 		renderer.setHorizontalAlignment(DefaultTableCellRenderer.CENTER);
 		table.setDefaultRenderer(Object.class, renderer);
 		
-		/*添加复选框*/
-		table.getColumnModel().getColumn(4).setCellRenderer(new TableCellRenderer() {
-			
-			@Override
-			public Component getTableCellRendererComponent(JTable table, Object value, 
-					boolean isSelected, boolean hasFocus,int row, int column) {
-				/*定义复选框*/
-				box = new JCheckBox();
-				/*使具有焦点的行对应的复选框被选中*/
-				box.setSelected(isSelected);
-				
-				/*使复选框在表格中居中*/
-				box.setHorizontalAlignment((int)0.5f);
-				return box;
-			}
-		});
 		
-		
-		
+	
 		JButton button1 = new JButton("Ajouter");
 		JButton button2 = new JButton("Supprimer");
 		button1.setFont(font2);
@@ -174,7 +155,7 @@ public class Produit extends JFrame{
 		button2.setBackground(Color.pink);
 		button2.setBounds(520,630, 170, 40);
 		
-		/*把组件放在分层窗格里*/
+	
 		laypane.add(label, new Integer(0),0);
 		laypane.add(lab3,new Integer(150),1);
 		laypane.add(j,new Integer(100),2);

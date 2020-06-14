@@ -24,12 +24,12 @@ public class UserManage extends JFrame{
 		
 		panel.setLayout(null);
 		
-		//改变窗口图标
+		//icon
 		Toolkit tool = Toolkit.getDefaultToolkit();
 		Image img = tool.getImage("src\\vue\\sign.jpg");
 		this.setIconImage(img);
 		
-		/*设置窗口背景图案*/
+		/*set background */
 		Icon i = new ImageIcon("src\\vue\\background5.jpg");
 		JLabel label = new JLabel(i);
 		label.setBounds(0, 0,1000, 800);
@@ -69,7 +69,7 @@ public class UserManage extends JFrame{
 	
 		panel.add(label);
 		
-		/*添加用户*/
+		/*ajouter un nouveau client*/
 		button1.addActionListener(new ActionListener() {
 			
 			@Override
@@ -84,7 +84,7 @@ public class UserManage extends JFrame{
 		
 		
 		
-		/*删除用户*/
+		/*supprimer un client*/
 		button2.addActionListener(new ActionListener() {
 			
 			@Override

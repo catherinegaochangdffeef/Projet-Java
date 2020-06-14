@@ -49,25 +49,23 @@ public class Commande extends JFrame{
 	
 	public Commande()  {
 		
-		/*
-		 * 查询图书
-		 */
+	
 		Font font1 = new Font("Arial",Font.BOLD,13);
 	
 		
 		
-		//改变窗口图标
+		//icon
 		Toolkit tool = Toolkit.getDefaultToolkit();
 		Image img = tool.getImage("src\\vue\\sign.jpg");
 		this.setIconImage(img);
 		
-		/*设置窗口背景图案*/
+		/*background set*/
 		Icon i = new ImageIcon("src\\vue\\background5.jpg");
 		JLabel label = new JLabel(i);
 		label.setBounds(0, 0, 1000, 800);
 		
 		
-		/*面板3中的标签*/
+		/*etiquette*/
 		Font font = new Font("Arial",Font.BOLD,20);
 		JLabel lab3 = new JLabel("Rechercher par");
 		lab3.setFont(font);
@@ -75,19 +73,19 @@ public class Commande extends JFrame{
 		lab3.setBounds(140, 60, 600, 30);
 		
 		
-		/*面板3中的查询下拉框*/
+		/*combobox*/
 		Dimension dimension = new Dimension(220,30);
 		JComboBox<String> j = new JComboBox<>();
 		j.setSize(dimension);
 		j.addItem("identifiant");
-		j.addItem("date de création");
-		j.addItem("réduction");
+		j.addItem("date de cr閍tion");
+		j.addItem("r閐uction");
 		j.setBounds(140, 100,220, 30);
 		j.setBackground(Color.pink );
 		j.setFont(font1);
 		
 		
-		/*面板3中的搜索框*/
+		/*recherche textfield*/
 		JTextField text3 = new JTextField();
 		Dimension dimension1 = new Dimension(270,30);
 		text3.setFont(font1);
@@ -95,24 +93,24 @@ public class Commande extends JFrame{
 		text3.setBackground(Color.pink);
 		text3.setBounds(390,100, 270, 30);
 		
-		/*按钮*/
+		/*button*/
 		JButton button = new JButton("Recherche");
 		button.setBackground(Color.pink);
 		button.setBounds(670, 100, 120, 30);
 		button.setFont(font1);
 		
-		/*新建表格*/
+		/*ajouter nouveau tableau*/
 		model = new DefaultTableModel();
 		model.addColumn("identifiant", new Vector<Integer>());
-		model.addColumn("date-de-création",new Vector<String>());
-		model.addColumn("réduction",new Vector<String>());
+		model.addColumn("date-de-cr閍tion",new Vector<String>());
+		model.addColumn("r閐uction",new Vector<String>());
 		JTable table = new JTable(model);
 		
 		JScrollPane jp = new JScrollPane(table);
 		jp.setBounds(100, 150, 750, 450);
 		
 		
-		/*使单元格中的内容居中*/
+		/*set des contenu au milieu*/
 		DefaultTableCellRenderer renderer=new DefaultTableCellRenderer();
 		renderer.setHorizontalAlignment(DefaultTableCellRenderer.CENTER);
 		table.setDefaultRenderer(Object.class, renderer);
@@ -139,7 +137,7 @@ public class Commande extends JFrame{
 		button4.setBackground(Color.pink);
 		button4.setBounds(690,630, 200, 40);
 		
-		/*把组件放在分层窗格里*/
+	
 		laypane1.add(label, new Integer(0),0);
 		laypane1.add(lab3,new Integer(150),1);
 		laypane1.add(j,new Integer(100),2);
