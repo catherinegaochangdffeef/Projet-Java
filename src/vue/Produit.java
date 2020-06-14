@@ -91,7 +91,7 @@ public class Produit extends JFrame{
 		Dimension dimension = new Dimension(220,30);
 		JComboBox<String> j = new JComboBox<>();
 		j.setSize(dimension);
-		j.addItem("recherche par indentifiant");
+		j.addItem("recherche par identifiant");
 		j.addItem("recherche par titre");
 		j.setBounds(140, 100,220, 30);
 		j.setBackground(Color.pink );
