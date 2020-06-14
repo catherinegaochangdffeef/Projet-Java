@@ -1,6 +1,5 @@
 package controleur;
 
-
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
@@ -18,6 +17,10 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
 import javax.swing.JTextField;
+
+
+import model.ClientOccasionnel;
+import storage.Videotheque;
 
 
 public class AddUser {
@@ -108,9 +111,12 @@ public class AddUser {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				String id = textname.getText().trim();
+				Integer id = Integer.valueOf(textname.getText().trim());
 				String nom = textname1.getText().trim();
-		
+				String prenom = textname2.getText().trim();
+				ClientOccasionnel client1 = new ClientOccasionnel(nom,prenom,id); 
+
+		Videotheque.ajouterClient(client1);
 			
 					JOptionPane.showMessageDialog(null, "Réussi à ajouter", "Ajouter", JOptionPane.PLAIN_MESSAGE);
 							}
