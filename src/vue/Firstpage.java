@@ -1,5 +1,6 @@
 package vue;
 
+import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.Image;
@@ -14,13 +15,20 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
+import javax.swing.JOptionPane;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+
 
 public class Firstpage {
+	private String name;
 	public void init() {
 		JFrame f=new JFrame("Bienvenue dans la gestion d'une vidéothèque!");
 //changer icon de la fênêtre		
 		Toolkit t=Toolkit.getDefaultToolkit();
-		Image img=t.getImage("src\\vue\\icon3.jpg");
+		Image img=t.getImage("src\\vue\\sign.jpg");
 		f.setIconImage(img);
 // set la taille d'une fenetre
 		f.setSize(600,600);
@@ -30,7 +38,7 @@ public class Firstpage {
 		f.setLayout(null);
 		
 // set la background de la fenetre
-		Icon i=new ImageIcon("src\\vue\\background.jpg");
+		Icon i=new ImageIcon("src\\vue\\background4.jpg");
 		JLabel jLable=new JLabel(i);
 		jLable.setBounds(0,0,600,600);
 		
@@ -45,6 +53,7 @@ public class Firstpage {
 		JLabel lable= new JLabel("Gestion de la vidéothèque");
 		Font font = new Font("Arial",Font.BOLD,35);
 		lable.setFont(font);
+		lable.setForeground(Color.WHITE);
 		panel1.add(lable);
 		panel1.setBounds(60,60,500,300);// set la taille de panel
 		f.add(panel1);
@@ -52,6 +61,7 @@ public class Firstpage {
 		JLabel user= new JLabel("Type d'utilisateur");
 		Font font1=new Font("Arial", Font.BOLD,25);
 		user.setFont(font1);
+		user.setForeground(Color.WHITE);
 		panel2.add(user);
 // deux type de utilisateur	
 		JComboBox<String> j= new JComboBox<String>();
@@ -61,6 +71,7 @@ public class Firstpage {
 		j.addItem("Administrateur");
 		Font font2=new Font("Arial", Font.BOLD,15);
 		j.setFont(font2);
+		j.setForeground(Color.WHITE);
 		panel2.setBounds(90,160,400,300);
 		panel2.add(j);
 		f.add(panel2);
@@ -69,6 +80,7 @@ public class Firstpage {
 		JLabel labid=new JLabel("Compte:");
 		Font font3=new Font("Arial", Font.BOLD,20);
 		labid.setFont(font3);
+		labid.setForeground(Color.WHITE);
 		panel3.add(labid);
 // la textfield de la compte
 		JTextField id= new JTextField();
@@ -80,6 +92,7 @@ public class Firstpage {
 		JLabel labpassword= new JLabel("Mot de passe:");
 		Font font4= new Font("Arial",Font.BOLD,20);
 		labpassword.setFont(font4);
+		labpassword.setForeground(Color.WHITE);
 		panel4.add(labpassword);
 // la textfield de la mode de passe
 		JPasswordField password= new JPasswordField();
@@ -104,7 +117,7 @@ public class Firstpage {
 		f.add(panel5);
 		f.add(panel6);
 		
-//tranparent
+//transparent
 		panel1.setOpaque(false);
 		panel2.setOpaque(false);
 		panel3.setOpaque(false);
@@ -118,9 +131,32 @@ public class Firstpage {
 		f.setResizable(false);
 		f.setVisible(true);
 		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-				
+//click le button connecter et changer l'interface
+		button2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				f.dispose();
+				new Menu(name);
+			
+			}
+		});				
 	}
 	
 
-		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
